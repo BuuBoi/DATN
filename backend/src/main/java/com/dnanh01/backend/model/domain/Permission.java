@@ -9,6 +9,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -32,6 +33,7 @@ public class Permission extends BaseClazz {
      *
      * @author DNAnh01[Do Nguyen Anh]
      */
+    @Builder.Default
     @OneToMany(mappedBy = "permission", cascade = CascadeType.ALL, orphanRemoval = true)
     @Column(name = "role_permissions")
     private Set<RolePermission> rolePermissions = new HashSet<>();

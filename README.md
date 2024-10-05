@@ -1,3 +1,35 @@
+# Technologies Used
+
+| Technology          | Version      |
+| ------------------- | ------------ |
+| Spring Boot         | 3.1.5        |
+| Java                | 17           |
+| Hibernate           | 6.2.13.Final |
+| Hibernate Validator | 8.0.1.Final  |
+| Spring Security     | 6.1.5        |
+| PostgreSQL          | 42.7.3       |
+| Lombok              | 1.18.30      |
+| JWT                 | 0.11.2       |
+
+# Running the Backend
+
+To run the backend of the project, follow these steps:
+
+1. Navigate to the backend directory:
+
+   ```bash
+   cd .\backend\
+   ```
+
+2. Run the Spring Boot application using Maven wrapper:
+   ```bash
+   .\mvnw.cmd spring-boot:run
+   ```
+
+This will start the Spring Boot application, and it will be accessible at `http://localhost:8080` (default port).
+
+Make sure you have Java 17 installed on your system before running the application.
+
 ##### Entity Relationship Diagram (ERD) for the database schema of the project.
 
 ```mermaid
