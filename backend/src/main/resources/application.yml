@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: pbl06-shoe-shop-v2
+  profiles:
+    active: local
+logging:
+  file:
+    name: ${logging.file.path}/${spring.application.name}.log

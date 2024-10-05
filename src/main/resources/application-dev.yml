@@ -1,0 +1,18 @@
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:sqlserver://pbl06-shoe-shop-v2.database.windows.net:1433;encrypt=true;trustServerCertificate=false;loginTimeout=30;database=master
+    username: dnanh01@pbl06-shoe-shop-v2
+    password: Anh@12345
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
