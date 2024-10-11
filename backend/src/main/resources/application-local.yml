@@ -1,20 +1,35 @@
 server:
-  port: 8088
-
+  port: 8080
+  servlet:
+    context-path: /ShopShoes
 spring:
   datasource:
-    url: jdbc:postgresql://127.0.0.1:5432/pbl06_shoe_shop_v2
-    username: postgres
-    password: root
-    driver-class-name: org.postgresql.Driver
+    url: jdbc:mysql://localhost:3306/pbl06-shoe-shop-v2
+    username: root
+    password: 120101
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+        dialect: org.hibernate.dialect.MySQLDialect
     hibernate:
       ddl-auto: update
     show-sql: true
 
+jwt:
+  signerKey: "2DU0iJ0m/Mug/wRqkvV78yjsbIPTss8pKA6ju5fNMfqt+jEAs9zzkLH6smWW0vmC"
+
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+
 logging:
   file:
     path: logs/local
+
+
+
+

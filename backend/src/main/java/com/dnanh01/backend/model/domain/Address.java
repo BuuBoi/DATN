@@ -30,6 +30,11 @@ public class Address extends BaseClazz {
 
     @Column(name = "ward", nullable = false)
     private String ward;
+
+    @Column(name = "details", nullable = false)
+    private String details;
+
+
     /**
      * relationship
      * n-1 [users]
